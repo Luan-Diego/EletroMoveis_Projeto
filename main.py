@@ -3,9 +3,9 @@ import psycopg2
 
 connection = psycopg2.connect(
     host="localhost",
-    database="ProjetoEletroMoveis",
+    database="SeuDatabaseExemplo",
     user="postgres",
-    password="pipoca69")
+    password="postgres")
 
 cursor = connection.cursor()
 
@@ -136,5 +136,5 @@ else:
         cadastrarProduto(cod_produto, nome, valor, data_recebimento, quantidade)
     if opcao == 3:
         entregaPendente()
-        print("EletroMoveis sistema de compras pendentes")
+        print("Sistema de compras pendentes")
 
